@@ -4,6 +4,8 @@ public class LoanManager {
 
     public void addLoan(String borrower, int amount, double interestRate){
         loans[loansCount] = new Loan(borrower, amount, interestRate);
+        System.out.println(Loan.getMaxLoan());
+
         loansCount++;
     }
 
